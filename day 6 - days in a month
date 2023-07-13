@@ -1,0 +1,7 @@
+var month= prompt('Enter the month: ','1 to 12');
+for(var day =1 ;day <= 31; day++){
+    if((month==4||month==6||month==9||month==11)&&day==31)continue;
+    console.log('Day: ',day);
+    if(month==2&&day==28)
+    break;
+}
