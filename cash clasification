@@ -1,0 +1,16 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int ca;
+    printf("Enter the cash: ");
+    scanf("%d",&ca);
+    printf("Hundred: %d\n",ca/100);
+    printf("Fifty: %d\n",(ca%100)/50);
+    printf("twenty: %d\n",((ca%100)%50)/20);
+    printf("ten: %d\n",(((ca%100)%50)%20)/10);
+    printf("five: %d\n",((((ca%100)%50)%20)%10)/5);
+    printf("two: %d\n",(((((ca%100)%50)%20)%10)%5)/2);
+    printf("one: %d\n",(((((ca%100)%50)%20)%10)%5)%2/1);
+    return 0;
+}
